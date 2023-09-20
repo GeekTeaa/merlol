@@ -1,0 +1,8 @@
+# Build System
+setuptools==68.2.2
+
+# Library Dependencies
+lcu_driver>=3.0.0
+
+# Unittests
+pytest==7.4.2
