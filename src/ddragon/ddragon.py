@@ -2,7 +2,10 @@ import json
 import requests
 import sys
 from pathlib import Path
-import cv2
+# import cv2
+
+def hello_world():
+    return "Hello World!"
 
 class DataDragon():
     def __init__(self, path=Path('../data-dragon/')):
@@ -75,11 +78,11 @@ if __name__ == "__main__":
     # print(json.dumps(dd.champions["Ezreal"], indent=2))
     # print(json.dumps(dd.items["1001"], indent=2))
 
-    champ_name = dd.champions[81]["name"]
-    img = cv2.imread(dd.images[champ_name], cv2.IMREAD_ANYCOLOR)
-    while True:
-        cv2.imshow("Ezreal", img)
-        cv2.waitKey(0)
-        sys.exit()
-
-    cv2.destroyAllWindows()
+# champ_name = dd.champions[81]["name"]
+# img = cv2.imread(dd.images[champ_name], cv2.IMREAD_ANYCOLOR)
+# while True:
+#     cv2.imshow("Ezreal", img)
+#     cv2.waitKey(0)
+#     sys.exit()
+#
+# cv2.destroyAllWindows()
